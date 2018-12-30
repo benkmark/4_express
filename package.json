@@ -1,0 +1,16 @@
+{
+  "name": "4_express",
+  "version": "1.0.0",
+  "description": "udemy-course for understanding git and heroku",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./server.js"
+  },
+  "author": "Markus Benkert <benkertmarkus@gmx.de>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "hbs": "^4.0.1"
+  }
+}

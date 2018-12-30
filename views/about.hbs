@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>My About Webpage</title>
+</head>
+
+<body>
+  {{> header}}
+  <h1 align="center">{{pageTitle}}</h1>
+  <p>{{pageTitle}}</p>
+  <p>By learning html, I'll be able to create web pages like a pro....<br> which I am of course.</p>
+  <!-- Who would have guessed how easy this would be :) -->
+    <!--
+  <footer>
+    <p>Generated in {{currentYear}}.</p>
+  </footer>
+Hier werden partials/footer aufgerufen und eingebaut
+  ACHTUNG benötigt Neustart von nodemon server.js -e js,hbs
+  SONST bekommmt nodemon das nicht geregelt-->
+  {{> footer}}
+</body>
+
+</html>
