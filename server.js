@@ -2,6 +2,8 @@ const express = require('express');
 const hbs = require('hbs');
 const fs = require('fs');
 
+const port = process.env.PORT || 3000;
+
 /*************** DEFINITION von html Partials ******************/
 // um häufig verwendete Codeteile wiederzuverwenden
 hbs.registerPartials(__dirname + '/views/partials');
@@ -90,6 +92,6 @@ app.get(about, (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log('Server is up and running on port 3000.')
+app.listen(port, () => {
+  console.log(`Heroku changes the port dynamically =>> Server is up and running on port ${port}`)
 });
